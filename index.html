@@ -1,24 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sahaya Care Healthcare Landing Page</title>
-    <meta name="description" content="Sahaya Care provides dedicated medical assistant support to ensure your loved one receives compassionate, professional care at every step." />
-    <meta property="og:title" content="Sahaya Care - Your Trusted Medical Assistant Service" />
-    <meta property="og:description" content="Because Every Patient Deserves a Companion. Supporting Your Loved One's Health Journey — Even When You're Away." />
-    <meta property="og:image" content="https://encryptedtbn0.gstatic.com/imagesq=tbn:ANd9GcSmU6XjCDW3ZKiDVif2rV5cce8IhOXTaTZyfw&s" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sahaya Care - Your Trusted Medical Assistant Service" />
-    <meta name="twitter:description" content="Compassionate medical assistance services for your loved ones." />
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahaya Care – Your Trusted Medical Assistant Service</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #1f2937; background: #f8fafc; }
+    header { background: linear-gradient(135deg, #dbeafe, #eff6ff); padding: 60px 20px; }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+    .hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; align-items: center; }
+    .hero h1 { font-size: 3rem; color: #0f172a; margin-bottom: 10px; }
+    .hero h2 { color: #2563eb; margin-bottom: 12px; }
+    .hero p { margin-bottom: 20px; font-size: 1.1rem; }
+    .btn { display: inline-block; background: #2563eb; color: white; padding: 12px 22px; border-radius: 10px; text-decoration: none; }
+    .hero img, .about img { width: 100%; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+    section { padding: 70px 20px; }
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+    .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #0f172a; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 25px; }
+    .card { background: white; padding: 25px; border-radius: 18px; box-shadow: 0 8px 18px rgba(0,0,0,0.06); }
+    .card h3 { color: #2563eb; margin-bottom: 12px; }
+    .cta { text-align: center; background: #e0f2fe; border-radius: 20px; padding: 40px; }
+    footer { background: #0f172a; color: white; text-align: center; padding: 25px; }
+    @media(max-width: 768px){
+      .hero, .about { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav style="background:white;padding:15px 20px;box-shadow:0 2px 10px rgba(0,0,0,0.06);position:sticky;top:0;z-index:1000;">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="30" fill="#2563eb"/>
+          <path d="M32 18c-4 0-7 3-7 7 0 6 7 11 7 11s7-5 7-11c0-4-3-7-7-7z" fill="white"/>
+          <rect x="29" y="36" width="6" height="14" fill="white"/>
+          <rect x="25" y="40" width="14" height="6" fill="white"/>
+        </svg>
+        <div>
+          <div style="font-weight:bold;font-size:1.2rem;color:#0f172a;">Sahaya Care</div>
+          <div style="font-size:0.8rem;color:#64748b;">Trusted Medical Companion</div>
+        </div>
+      </div>
+      <a class="btn" href="https://wa.me/919059914634">WhatsApp</a>
+    </div>
+  </nav>
+  <header>
+    <div class="container hero">
+      <div>
+        <h1>Sahaya Care</h1>
+        <h2>Your Trusted Medical Assistant Service</h2>
+        <p><strong>Because Every Patient Deserves a Companion</strong><br>Supporting your loved one’s health journey — even when you’re away.</p>
+        <a class="btn" href="tel:9059914634">Call / WhatsApp Now</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80" alt="Caregiver with elderly patient" />
+    </div>
+  </header>
+
+  <section>
+    <div class="container about">
+      <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1200&q=80" alt="Hospital companion support" />
+      <div>
+        <h2>Supporting Families with Compassion</h2>
+        <p>Caring for a family member during a medical journey can be emotionally and logistically challenging. Sahaya Care provides dedicated medical assistant support to ensure your loved one receives compassionate, professional care at every step.</p>
+        <p>Whether you live far away, have work commitments, or need reliable support, we stand beside your family—just like one of your own.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Appointment & Room Booking</h3>
+          <p>Doctor appointments, room/bed booking, schedules, and confirmations handled seamlessly.</p>
+        </div>
+        <div class="card">
+          <h3>Medical History Coordination</h3>
+          <p>Complete medical reports collection and accurate coordination with hospitals and caregivers.</p>
+        </div>
+        <div class="card">
+          <h3>Doctor Collaboration</h3>
+          <p>We interact with doctors and nurses, ensuring updates, transparency, and informed decisions.</p>
+        </div>
+        <div class="card">
+          <h3>Hospital Companion Support</h3>
+          <p>From accompaniment to discharge paperwork, billing, medication collection, and aftercare guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container cta">
+      <h2>We help you focus on what truly matters—your loved one’s well-being.</h2>
+      <p style="margin:15px 0;">📞 Call/WhatsApp: 90599 14634</p>
+      <a class="btn" href="https://wa.me/919059914634">Get Support Now</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Why Choose Sahaya Care?</h2>
+      <div class="services">
+        <div class="card"><h3>Personalized Assistance</h3><p>Tailored support for every patient’s unique medical journey.</p></div>
+        <div class="card"><h3>Trusted Updates</h3><p>Regular family updates so you always stay informed.</p></div>
+        <div class="card"><h3>Stress-Free Coordination</h3><p>We manage hospital logistics so your family can focus on care.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container cta">
+      <h2>Families Trust Us Like Their Own</h2>
+      <p>“Sahaya Care supported my mother during her hospital stay when I was abroad. Their updates and compassion gave us total peace of mind.”</p>
+    </div>
+  </section>
+
+  <a href="https://wa.me/919059914634" style="position:fixed;bottom:20px;right:20px;background:#22c55e;color:white;padding:14px 18px;border-radius:999px;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,0.2);">WhatsApp Us</a>
+
+  <footer>
+    <p>© 2026 Sahaya Care – Your Trusted Medical Assistant Service</p>
+  </footer>
+</body>
 </html>
